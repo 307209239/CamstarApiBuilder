@@ -7,7 +7,7 @@
     <ProjectGuid>{9092520E-8460-4DA8-8FE2-E4DAF6C4C35F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AssemblyName>Camstar.Util</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersions>v4.7.2;netstandard2.0</TargetFrameworkVersions>
     <ApplicationVersion>7.8.7004.31159</ApplicationVersion>
     <FileAlignment>512</FileAlignment>
     <RootNamespace>Camstar.Util</RootNamespace>
