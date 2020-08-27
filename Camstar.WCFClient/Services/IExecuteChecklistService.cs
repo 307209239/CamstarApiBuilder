@@ -1,0 +1,116 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: Camstar.WCF.Services.IExecuteChecklistService
+// Assembly: Camstar.WCFClient, Version=7.7.7004.31021, Culture=neutral, PublicKeyToken=null
+// MVID: CA19AA1B-EA44-4AB0-A5CC-92D7FB49DA91
+// Assembly location: E:\WCFServicesGenerator\Camstar.WCFClient.dll
+
+using Camstar.WCF.ObjectStack;
+using System.ServiceModel;
+
+namespace Camstar.WCF.Services
+{
+  [ServiceContract]
+  public interface IExecuteChecklistService
+  {
+    [OperationContract]
+    ResultStatus CreateParametricData(
+      UserProfile userProfile,
+      ExecuteChecklist executeChecklist,
+      ExecuteChecklist_Parameters parameters,
+      ExecuteChecklist_Request request,
+      out ExecuteChecklist_Result result);
+
+    [OperationContract]
+    ResultStatus GetActions(
+      UserProfile userProfile,
+      ExecuteChecklist executeChecklist,
+      ExecuteChecklist_Parameters parameters,
+      ExecuteChecklist_Request request,
+      out ExecuteChecklist_Result result);
+
+    [OperationContract]
+    ResultStatus GetChecklistEntries(
+      UserProfile userProfile,
+      ExecuteChecklist executeChecklist,
+      ExecuteChecklist_Parameters parameters,
+      ExecuteChecklist_Request request,
+      out ExecuteChecklist_Result result);
+
+    [OperationContract]
+    ResultStatus GetDataPoints(
+      UserProfile userProfile,
+      ExecuteChecklist executeChecklist,
+      ExecuteChecklist_Parameters parameters,
+      ExecuteChecklist_Request request,
+      out ExecuteChecklist_Result result);
+
+    [OperationContract]
+    ResultStatus GetWIPMsgs(
+      UserProfile userProfile,
+      ExecuteChecklist executeChecklist,
+      ExecuteChecklist_Parameters parameters,
+      ExecuteChecklist_Request request,
+      out ExecuteChecklist_Result result);
+
+    [OperationContract]
+    ResultStatus Load(
+      UserProfile userProfile,
+      ExecuteChecklist executeChecklist,
+      ExecuteChecklist_Parameters parameters,
+      ExecuteChecklist_Request request,
+      out ExecuteChecklist_Result result);
+
+    [OperationContract]
+    ResultStatus LoadESigDetails(
+      UserProfile userProfile,
+      ExecuteChecklist executeChecklist,
+      ExecuteChecklist_LoadESigDetails_Parameters parameters,
+      ExecuteChecklist_Request request,
+      out ExecuteChecklist_Result result);
+
+    [OperationContract]
+    ResultStatus PreviewChecklist(
+      UserProfile userProfile,
+      ExecuteChecklist executeChecklist,
+      ExecuteChecklist_Parameters parameters,
+      ExecuteChecklist_Request request,
+      out ExecuteChecklist_Result result);
+
+    [OperationContract]
+    ResultStatus ProcessComputation(
+      UserProfile userProfile,
+      ExecuteChecklist executeChecklist,
+      ExecuteChecklist_Parameters parameters,
+      ExecuteChecklist_Request request,
+      out ExecuteChecklist_Result result);
+
+    [OperationContract]
+    ResultStatus ResolveParametricData(
+      UserProfile userProfile,
+      ExecuteChecklist executeChecklist,
+      ExecuteChecklist_Parameters parameters,
+      ExecuteChecklist_Request request,
+      out ExecuteChecklist_Result result);
+
+    [OperationContract]
+    ResultStatus CommitTransaction(
+      UserProfile userProfile,
+      ExecuteChecklistMethod[] methods,
+      ExecuteChecklist_Request request,
+      out ExecuteChecklist_Result result);
+
+    [OperationContract]
+    ResultStatus ExecuteTransaction(
+      UserProfile userProfile,
+      ExecuteChecklist executeChecklist,
+      ExecuteChecklist_Request request,
+      out ExecuteChecklist_Result result);
+
+    [OperationContract]
+    ResultStatus GetEnvironment(
+      UserProfile userProfile,
+      ExecuteChecklist executeChecklist,
+      ExecuteChecklist_Request request,
+      out ExecuteChecklist_Result result);
+  }
+}

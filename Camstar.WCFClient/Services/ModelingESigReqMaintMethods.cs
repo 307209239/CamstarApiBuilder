@@ -1,0 +1,32 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: Camstar.WCF.Services.ModelingESigReqMaintMethods
+// Assembly: Camstar.WCFClient, Version=7.7.7004.31021, Culture=neutral, PublicKeyToken=null
+// MVID: CA19AA1B-EA44-4AB0-A5CC-92D7FB49DA91
+// Assembly location: E:\WCFServicesGenerator\Camstar.WCFClient.dll
+
+using Camstar.WCF.ObjectStack;
+using System;
+using System.Runtime.Serialization;
+
+namespace Camstar.WCF.Services
+{
+  [DataContract(Namespace = "Camstar.WCF.ObjectStack")]
+  [Serializable]
+  public enum ModelingESigReqMaintMethods
+  {
+    [EnumMember, Enumeration(null)] Delete,
+    [Enumeration(null), EnumMember] Freeze,
+    [Enumeration(null), EnumMember] GetResolvedRequirements,
+    [Enumeration(null), EnumMember] GetWIPMsgs,
+    [EnumMember, Enumeration(null)] Load,
+    [EnumMember, Enumeration(null)] LoadESigDetails,
+    [Enumeration(null), EnumMember] LoadValues,
+    [EnumMember, Enumeration(null)] New,
+    [Enumeration(null), EnumMember] NewCopy,
+    [EnumMember, Enumeration(null)] Process,
+    [Enumeration(null), EnumMember] SaveAs,
+    [EnumMember, Enumeration(null)] UnFreeze,
+    [EnumMember, Enumeration(null)] ExecuteTransaction,
+    [EnumMember, Enumeration(null)] AddDataTransaction,
+  }
+}

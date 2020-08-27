@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\WCFServicesGenerator\Camstar.WCFGenerator.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{48A7EFD7-B8A4-4228-8B30-51580F66A3E4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Camstar.WCFGenerator</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <ApplicationVersion>7.8.7004.31022</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Camstar.WCF.Generator</RootNamespace>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Camstar.WCFClientBase">
+      <HintPath>lib\Camstar.WCFClientBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Camstar.WCFServiceBase">
+      <HintPath>lib\Camstar.WCFServiceBase.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientGenerator.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="AssemblyGenerator.cs" />
+    <Compile Include="DCType.cs" />
+    <Compile Include="DCTypeCache.cs" />
+    <Compile Include="DCTypeStore.cs" />
+    <Compile Include="DCField.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="Parameter.cs" />
+    <Compile Include="ServiceGenerator.cs" />
+    <Compile Include="ServiceAssemblyGeneratorBase.cs" />
+    <Compile Include="AssemblyGeneratorBase.cs" />
+    <Compile Include="Runner.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="ObjectModel\CDODefinition.cs" />
+    <Compile Include="ObjectModel\CDOField.cs" />
+    <Compile Include="ObjectModel\CDOMethod.cs" />
+    <Compile Include="ObjectModel\ModelDataSet.cs" />
+    <Compile Include="ObjectModel\RequestorBase.cs" />
+    <Compile Include="ObjectModel\CDORequestor.cs" />
+    <Compile Include="ObjectModel\SiteInfoRequestor.cs" />
+    <Compile Include="ObjectModel\ModelDataSetTableAdapters\CDOChildrenTableAdapter.cs" />
+    <Compile Include="ObjectModel\ModelDataSetTableAdapters\CDOMethodsTableAdapter.cs" />
+    <Compile Include="ObjectModel\ModelDataSetTableAdapters\CDOFieldsTableAdapter.cs" />
+    <Compile Include="ObjectModel\ModelDataSetTableAdapters\WCFWorkspacesTableAdapter.cs" />
+    <Compile Include="ObjectModel\ModelDataSetTableAdapters\UserTableAdapter.cs" />
+    <Compile Include="Helper\ServiceSettingsElement.cs" />
+    <Compile Include="Helper\MethodElement.cs" />
+    <Compile Include="Helper\GeneratedAssemblySettingsElement.cs" />
+    <Compile Include="Helper\ServicesSettingsElement.cs" />
+    <Compile Include="Helper\ConnectionSettingsElement.cs" />
+    <Compile Include="Helper\ConnectionStringElement.cs" />
+    <Compile Include="Helper\ServiceElementCollection.cs" />
+    <Compile Include="Helper\MethodElementCollection.cs" />
+    <Compile Include="Helper\ConnectionStringElementCollection.cs" />
+    <Compile Include="Helper\GeneratorSection.cs" />
+    <Compile Include="Helper\DCBuilderType.cs" />
+    <Compile Include="Helper\StateChangeEventHandler.cs" />
+    <Compile Include="Helper\GeneratingCompletedEventHandler.cs" />
+    <Compile Include="Helper\GeneratingCompletedEventArgs.cs" />
+    <Compile Include="Helper\StateChangeEventArgs.cs" />
+    <Compile Include="Helper\GeneratorStateType.cs" />
+    <Compile Include="Helper\ExposedMethodStateType.cs" />
+    <Compile Include="Helper\ExposedServiceStateType.cs" />
+    <Compile Include="Helper\GeneratingPhase.cs" />
+    <Compile Include="Helper\CompleteInformation.cs" />
+    <Compile Include="Helper\WCFGeneratorException.cs" />
+    <Compile Include="Helper\IService.cs" />
+    <Compile Include="Helper\IMethod.cs" />
+    <Compile Include="Helper\Method.cs" />
+    <Compile Include="Helper\MethodComparer.cs" />
+    <Compile Include="Helper\Launcher.cs" />
+    <Compile Include="Helper\ServiceBase.cs" />
+    <Compile Include="Helper\GeneratorSettings.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

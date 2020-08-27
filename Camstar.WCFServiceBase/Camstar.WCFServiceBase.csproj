@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\WCFServicesGenerator\Camstar.WCFServiceBase.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF49E584-0971-4F40-BE65-B71A6198B11A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Camstar.WCFServiceBase</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <ApplicationVersion>7.8.7004.31021</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Camstar.WCF.Service</RootNamespace>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Camstar.Util">
+      <HintPath>lib\Camstar.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="Camstar.Utility">
+      <HintPath>lib\Camstar.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IAuthenticationService.cs" />
+    <Compile Include="AuthenticationService.cs" />
+    <Compile Include="QueryType.cs" />
+    <Compile Include="ListItemAction.cs" />
+    <Compile Include="Action.cs" />
+    <Compile Include="ExceptionLevel.cs" />
+    <Compile Include="Request.cs" />
+    <Compile Include="Result.cs" />
+    <Compile Include="Parameters.cs" />
+    <Compile Include="Method.cs" />
+    <Compile Include="CDOObject.cs" />
+    <Compile Include="DCObject.cs" />
+    <Compile Include="BaseObjectRef.cs" />
+    <Compile Include="ContainerRef.cs" />
+    <Compile Include="NamedObjectRef.cs" />
+    <Compile Include="RevisionedObjectRef.cs" />
+    <Compile Include="SubentityRef.cs" />
+    <Compile Include="NamedSubentityRef.cs" />
+    <Compile Include="QueryParameter.cs" />
+    <Compile Include="QueryParameters.cs" />
+    <Compile Include="QueryItem.cs" />
+    <Compile Include="QueryOptions.cs" />
+    <Compile Include="ExceptionParameter.cs" />
+    <Compile Include="ExceptionDataType.cs" />
+    <Compile Include="ResultStatus.cs" />
+    <Compile Include="Row.cs" />
+    <Compile Include="Header.cs" />
+    <Compile Include="RecordSet.cs" />
+    <Compile Include="SelectionValuesInfo.cs" />
+    <Compile Include="Info.cs" />
+    <Compile Include="Environment.cs" />
+    <Compile Include="EncryptedField.cs" />
+    <Compile Include="PasswordFieldType.cs" />
+    <Compile Include="UserProfile.cs" />
+    <Compile Include="UserProfileData.cs" />
+    <Compile Include="SessionData.cs" />
+    <Compile Include="LabelType.cs" />
+    <Compile Include="Label.cs" />
+    <Compile Include="LabelRequest.cs" />
+    <Compile Include="LabelResult.cs" />
+    <Compile Include="IPrimitive.cs" />
+    <Compile Include="Primitive`1.cs" />
+    <Compile Include="Enumeration`2.cs" />
+    <Compile Include="DebugResponse.cs" />
+    <Compile Include="DebugRequest.cs" />
+    <Compile Include="ServerTraceItem.cs" />
+    <Compile Include="TraceItemParameter.cs" />
+    <Compile Include="TraceItemAttribute.cs" />
+    <Compile Include="IDirectAccessService.cs" />
+    <Compile Include="DirectAccessService.cs" />
+    <Compile Include="ILabelService.cs" />
+    <Compile Include="LabelService.cs" />
+    <Compile Include="IQueryService.cs" />
+    <Compile Include="QueryService.cs" />
+    <Compile Include="ServerManager.cs" />
+    <Compile Include="InSiteXmlParser.cs" />
+    <Compile Include="InSiteXmlReader.cs" />
+    <Compile Include="InSiteXmlWriter.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="ServiceBase.cs" />
+    <Compile Include="UnknownObjectReader.cs" />
+    <Compile Include="UnknownObjectWriter.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
