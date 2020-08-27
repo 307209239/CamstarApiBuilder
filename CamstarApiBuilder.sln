@@ -3,23 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camstar.Exceptions", ".\Camstar.Exceptions\Camstar.Exceptions.csproj", "{0602C280-8007-4AF2-ABF1-29838C482D1A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camstar.Exceptions", "Camstar.Exceptions\Camstar.Exceptions.csproj", "{0602C280-8007-4AF2-ABF1-29838C482D1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camstar.Util", ".\Camstar.Util\Camstar.Util.csproj", "{9092520E-8460-4DA8-8FE2-E4DAF6C4C35F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camstar.Util", "Camstar.Util\Camstar.Util.csproj", "{9092520E-8460-4DA8-8FE2-E4DAF6C4C35F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camstar.Utility", ".\Camstar.Utility\Camstar.Utility.csproj", "{36CDEAA6-3B77-49DF-B254-BB15759E78BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camstar.Utility", "Camstar.Utility\Camstar.Utility.csproj", "{36CDEAA6-3B77-49DF-B254-BB15759E78BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camstar.WCFClient", ".\Camstar.WCFClient\Camstar.WCFClient.csproj", "{A1D73913-FD13-410B-BD74-73CF8E8EDF1C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camstar.WCFClient", "Camstar.WCFClient\Camstar.WCFClient.csproj", "{A1D73913-FD13-410B-BD74-73CF8E8EDF1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camstar.WCFClientBase", ".\Camstar.WCFClientBase\Camstar.WCFClientBase.csproj", "{F661E21B-5EFE-4E8E-8456-B81F44D642A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camstar.WCFClientBase", "Camstar.WCFClientBase\Camstar.WCFClientBase.csproj", "{F661E21B-5EFE-4E8E-8456-B81F44D642A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camstar.WCFGenerator", ".\Camstar.WCFGenerator\Camstar.WCFGenerator.csproj", "{48A7EFD7-B8A4-4228-8B30-51580F66A3E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camstar.WCFGenerator", "Camstar.WCFGenerator\Camstar.WCFGenerator.csproj", "{48A7EFD7-B8A4-4228-8B30-51580F66A3E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camstar.WCFServiceBase", ".\Camstar.WCFServiceBase\Camstar.WCFServiceBase.csproj", "{CF49E584-0971-4F40-BE65-B71A6198B11A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camstar.WCFServiceBase", "Camstar.WCFServiceBase\Camstar.WCFServiceBase.csproj", "{CF49E584-0971-4F40-BE65-B71A6198B11A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFBuilder", ".\WCFBuilder\WCFBuilder.csproj", "{8E791CC8-84EB-498D-886A-2F5B14FE46C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFBuilder", "WCFBuilder\WCFBuilder.csproj", "{8E791CC8-84EB-498D-886A-2F5B14FE46C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFBuilderLauncher", ".\WCFBuilderLauncher\WCFBuilderLauncher.csproj", "{FD534DF8-81A2-4813-8B08-E712C4A1F80B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFBuilderLauncher", "WCFBuilderLauncher\WCFBuilderLauncher.csproj", "{FD534DF8-81A2-4813-8B08-E712C4A1F80B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camstar.Api.Exceptions", "Camstar.Api.Exceptions\Camstar.Api.Exceptions.csproj", "{756DCF68-ECC0-4328-82C8-79AF9F4291E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{FD534DF8-81A2-4813-8B08-E712C4A1F80B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD534DF8-81A2-4813-8B08-E712C4A1F80B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD534DF8-81A2-4813-8B08-E712C4A1F80B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{756DCF68-ECC0-4328-82C8-79AF9F4291E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{756DCF68-ECC0-4328-82C8-79AF9F4291E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{756DCF68-ECC0-4328-82C8-79AF9F4291E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{756DCF68-ECC0-4328-82C8-79AF9F4291E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
