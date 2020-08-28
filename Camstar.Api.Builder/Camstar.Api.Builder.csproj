@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssemblyGenerator.cs" />
+    <Compile Include="AssemblyGeneratorBase.cs" />
+    <Compile Include="CDOField.cs" />
+    <Compile Include="CompleteInformation.cs" />
+    <Compile Include="DCField.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Runner.cs" />
