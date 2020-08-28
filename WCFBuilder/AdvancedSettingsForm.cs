@@ -75,8 +75,8 @@ namespace Camstar.WCF.Builder
       this.ClientSize = new Size(410, 356);
       this.Controls.Add((Control) this.propertyGrid1);
       this.Controls.Add((Control) this.panel1);
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
-      this.Name = nameof (AdvancedSettingsForm);
+      
+      this.Name = "AdvancedSettings";
       this.StartPosition = FormStartPosition.CenterParent;
       this.Text = "Advanced Settings";
       this.panel1.ResumeLayout(false);

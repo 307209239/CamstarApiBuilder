@@ -274,10 +274,10 @@ namespace Camstar.WCF.Builder
       {
         this.removeFilterToolStripMenuItem.Visible = false;
         this.filterToolStripButton.Visible = false;
-        this.LoadServices(new List<IService>((IEnumerable<IService>) new IService[1]
+        this.LoadServices(new List<IService>()
         {
           service
-        }));
+        });
       }
       else
       {
@@ -518,13 +518,13 @@ namespace Camstar.WCF.Builder
       this.contextMenuStrip1.Name = "contextMenuStrip1";
       this.contextMenuStrip1.Size = new Size(247, 148);
       this.contextMenuStrip1.Opening += new CancelEventHandler(this.contextMenuStrip1_Opening);
-      this.setAllChildAsExposedToolStripMenuItem.Image = (Image) componentResourceManager.GetObject("setAllChildAsExposedToolStripMenuItem.Image");
+     // this.setAllChildAsExposedToolStripMenuItem.Image = (Image) componentResourceManager.GetObject("setAllChildAsExposedToolStripMenuItem.Image");
       this.setAllChildAsExposedToolStripMenuItem.ImageTransparentColor = Color.Magenta;
       this.setAllChildAsExposedToolStripMenuItem.Name = "setAllChildAsExposedToolStripMenuItem";
       this.setAllChildAsExposedToolStripMenuItem.Size = new Size(246, 22);
       this.setAllChildAsExposedToolStripMenuItem.Text = "Set child services as Exposed";
       this.setAllChildAsExposedToolStripMenuItem.Click += new EventHandler(this.setAllChildAsExposedToolStripMenuItem_Click);
-      this.setAllChildAsNonExposedToolStripMenuItem.Image = (Image) componentResourceManager.GetObject("setAllChildAsNonExposedToolStripMenuItem.Image");
+     // this.setAllChildAsNonExposedToolStripMenuItem.Image = (Image) componentResourceManager.GetObject("setAllChildAsNonExposedToolStripMenuItem.Image");
       this.setAllChildAsNonExposedToolStripMenuItem.ImageTransparentColor = Color.Magenta;
       this.setAllChildAsNonExposedToolStripMenuItem.Name = "setAllChildAsNonExposedToolStripMenuItem";
       this.setAllChildAsNonExposedToolStripMenuItem.Size = new Size(246, 22);
@@ -558,25 +558,25 @@ namespace Camstar.WCF.Builder
       this.setAllMethodsAsToolStripMenuItem.Name = "setAllMethodsAsToolStripMenuItem";
       this.setAllMethodsAsToolStripMenuItem.Size = new Size(246, 22);
       this.setAllMethodsAsToolStripMenuItem.Text = "Set all methods as";
-      this.exposedToolStripMenuItem.Image = (Image) componentResourceManager.GetObject("exposedToolStripMenuItem.Image");
+     // this.exposedToolStripMenuItem.Image = (Image) componentResourceManager.GetObject("exposedToolStripMenuItem.Image");
       this.exposedToolStripMenuItem.ImageTransparentColor = Color.Magenta;
       this.exposedToolStripMenuItem.Name = "exposedToolStripMenuItem";
       this.exposedToolStripMenuItem.Size = new Size(169, 22);
       this.exposedToolStripMenuItem.Text = "Exposed";
       this.exposedToolStripMenuItem.Click += new EventHandler(this.exposedToolStripMenuItem_Click);
-      this.nonExposedToolStripMenuItem.Image = (Image) componentResourceManager.GetObject("nonExposedToolStripMenuItem.Image");
+     // this.nonExposedToolStripMenuItem.Image = (Image) componentResourceManager.GetObject("nonExposedToolStripMenuItem.Image");
       this.nonExposedToolStripMenuItem.ImageTransparentColor = Color.Magenta;
       this.nonExposedToolStripMenuItem.Name = "nonExposedToolStripMenuItem";
       this.nonExposedToolStripMenuItem.Size = new Size(169, 22);
       this.nonExposedToolStripMenuItem.Text = "NonExposed";
       this.nonExposedToolStripMenuItem.Click += new EventHandler(this.nonExposedToolStripMenuItem_Click);
-      this.baseToolStripMenuItem.Image = (Image) componentResourceManager.GetObject("baseToolStripMenuItem.Image");
+     // this.baseToolStripMenuItem.Image = (Image) componentResourceManager.GetObject("baseToolStripMenuItem.Image");
       this.baseToolStripMenuItem.ImageTransparentColor = Color.Magenta;
       this.baseToolStripMenuItem.Name = "baseToolStripMenuItem";
       this.baseToolStripMenuItem.Size = new Size(169, 22);
       this.baseToolStripMenuItem.Text = "Base";
       this.baseToolStripMenuItem.Click += new EventHandler(this.baseToolStripMenuItem_Click);
-      this.baseAndExposedToolStripMenuItem.Image = (Image) componentResourceManager.GetObject("baseAndExposedToolStripMenuItem.Image");
+     // this.baseAndExposedToolStripMenuItem.Image = (Image) componentResourceManager.GetObject("baseAndExposedToolStripMenuItem.Image");
       this.baseAndExposedToolStripMenuItem.ImageTransparentColor = Color.Magenta;
       this.baseAndExposedToolStripMenuItem.Name = "baseAndExposedToolStripMenuItem";
       this.baseAndExposedToolStripMenuItem.Size = new Size(169, 22);
@@ -584,13 +584,13 @@ namespace Camstar.WCF.Builder
       this.baseAndExposedToolStripMenuItem.Click += new EventHandler(this.baseAndExposedToolStripMenuItem_Click);
       this.toolStripSeparator4.Name = "toolStripSeparator4";
       this.toolStripSeparator4.Size = new Size(243, 6);
-      this.setFilterToToolStripMenuItem.Image = (Image) componentResourceManager.GetObject("setFilterToToolStripMenuItem.Image");
+     // this.setFilterToToolStripMenuItem.Image = (Image) componentResourceManager.GetObject("setFilterToToolStripMenuItem.Image");
       this.setFilterToToolStripMenuItem.ImageTransparentColor = Color.Magenta;
       this.setFilterToToolStripMenuItem.Name = "setFilterToToolStripMenuItem";
       this.setFilterToToolStripMenuItem.Size = new Size(246, 22);
       this.setFilterToToolStripMenuItem.Text = "Set filter to ...";
       this.setFilterToToolStripMenuItem.Click += new EventHandler(this.setFilterToToolStripMenuItem_Click);
-      this.removeFilterToolStripMenuItem.Image = (Image) componentResourceManager.GetObject("removeFilterToolStripMenuItem.Image");
+     // this.removeFilterToolStripMenuItem.Image = (Image) componentResourceManager.GetObject("removeFilterToolStripMenuItem.Image");
       this.removeFilterToolStripMenuItem.ImageTransparentColor = Color.Magenta;
       this.removeFilterToolStripMenuItem.Name = "removeFilterToolStripMenuItem";
       this.removeFilterToolStripMenuItem.Size = new Size(246, 22);
@@ -601,7 +601,7 @@ namespace Camstar.WCF.Builder
       this.editToolStripMenuItem.Name = "editToolStripMenuItem";
       this.editToolStripMenuItem.Size = new Size(39, 23);
       this.editToolStripMenuItem.Text = "&Edit";
-      this.imageList1.ImageStream = (ImageListStreamer) componentResourceManager.GetObject("imageList1.ImageStream");
+     // this.imageList1.ImageStream = (ImageListStreamer) componentResourceManager.GetObject("imageList1.ImageStream");
       this.imageList1.TransparentColor = Color.Magenta;
       this.imageList1.Images.SetKeyName(0, "Stop.bmp");
       this.imageList1.Images.SetKeyName(1, "Play.bmp");
@@ -682,7 +682,7 @@ namespace Camstar.WCF.Builder
       this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
       this.fileToolStripMenuItem.Size = new Size(37, 23);
       this.fileToolStripMenuItem.Text = "&File";
-      this.openToolStripMenuItem.Image = (Image) componentResourceManager.GetObject("openToolStripMenuItem.Image");
+     // this.openToolStripMenuItem.Image = (Image) componentResourceManager.GetObject("openToolStripMenuItem.Image");
       this.openToolStripMenuItem.ImageTransparentColor = Color.Magenta;
       this.openToolStripMenuItem.Name = "openToolStripMenuItem";
       this.openToolStripMenuItem.ShortcutKeys = Keys.O | Keys.Control;
@@ -691,7 +691,7 @@ namespace Camstar.WCF.Builder
       this.openToolStripMenuItem.Click += new EventHandler(this.openToolStripMenuItem_Click);
       this.toolStripSeparator.Name = "toolStripSeparator";
       this.toolStripSeparator.Size = new Size(222, 6);
-      this.saveToolStripMenuItem.Image = (Image) componentResourceManager.GetObject("saveToolStripMenuItem.Image");
+     // this.saveToolStripMenuItem.Image = (Image) componentResourceManager.GetObject("saveToolStripMenuItem.Image");
       this.saveToolStripMenuItem.ImageTransparentColor = Color.Magenta;
       this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
       this.saveToolStripMenuItem.ShortcutKeys = Keys.S | Keys.Control;
@@ -704,7 +704,7 @@ namespace Camstar.WCF.Builder
       this.saveAsToolStripMenuItem.Click += new EventHandler(this.saveAsToolStripMenuItem_Click);
       this.toolStripSeparator3.Name = "toolStripSeparator3";
       this.toolStripSeparator3.Size = new Size(222, 6);
-      this.generateToolStripMenuItem.Image = (Image) componentResourceManager.GetObject("generateToolStripMenuItem.Image");
+     // this.generateToolStripMenuItem.Image = (Image) componentResourceManager.GetObject("generateToolStripMenuItem.Image");
       this.generateToolStripMenuItem.ImageTransparentColor = Color.Magenta;
       this.generateToolStripMenuItem.Name = "generateToolStripMenuItem";
       this.generateToolStripMenuItem.ShortcutKeys = Keys.G | Keys.Control;
@@ -774,14 +774,14 @@ namespace Camstar.WCF.Builder
       this.toolStrip1.Stretch = true;
       this.toolStrip1.TabIndex = 0;
       this.openToolStripButton.DisplayStyle = ToolStripItemDisplayStyle.Image;
-      this.openToolStripButton.Image = (Image) componentResourceManager.GetObject("openToolStripButton.Image");
+     // this.openToolStripButton.Image = (Image) componentResourceManager.GetObject("openToolStripButton.Image");
       this.openToolStripButton.ImageTransparentColor = Color.Magenta;
       this.openToolStripButton.Name = "openToolStripButton";
       this.openToolStripButton.Size = new Size(23, 22);
       this.openToolStripButton.Text = "&Open Configuration";
       this.openToolStripButton.Click += new EventHandler(this.openToolStripMenuItem_Click);
       this.saveToolStripButton.DisplayStyle = ToolStripItemDisplayStyle.Image;
-      this.saveToolStripButton.Image = (Image) componentResourceManager.GetObject("saveToolStripButton.Image");
+     // this.saveToolStripButton.Image = (Image) componentResourceManager.GetObject("saveToolStripButton.Image");
       this.saveToolStripButton.ImageTransparentColor = Color.Magenta;
       this.saveToolStripButton.Name = "saveToolStripButton";
       this.saveToolStripButton.Size = new Size(23, 22);
@@ -790,7 +790,7 @@ namespace Camstar.WCF.Builder
       this.toolStripSeparator2.Name = "toolStripSeparator2";
       this.toolStripSeparator2.Size = new Size(6, 25);
       this.toolStripButton2.DisplayStyle = ToolStripItemDisplayStyle.Image;
-      this.toolStripButton2.Image = (Image) componentResourceManager.GetObject("toolStripButton2.Image");
+     // this.toolStripButton2.Image = (Image) componentResourceManager.GetObject("toolStripButton2.Image");
       this.toolStripButton2.ImageTransparentColor = Color.Magenta;
       this.toolStripButton2.Name = "toolStripButton2";
       this.toolStripButton2.Size = new Size(23, 22);
@@ -799,14 +799,14 @@ namespace Camstar.WCF.Builder
       this.toolStripSeparator6.Name = "toolStripSeparator6";
       this.toolStripSeparator6.Size = new Size(6, 25);
       this.toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Image;
-      this.toolStripButton1.Image = (Image) componentResourceManager.GetObject("toolStripButton1.Image");
+    //  this.toolStripButton1.Image = (Image) componentResourceManager.GetObject("toolStripButton1.Image");
       this.toolStripButton1.ImageTransparentColor = Color.Magenta;
       this.toolStripButton1.Name = "toolStripButton1";
       this.toolStripButton1.Size = new Size(23, 22);
       this.toolStripButton1.Text = "Filter";
       this.toolStripButton1.Click += new EventHandler(this.setFilterToToolStripMenuItem_Click);
       this.filterToolStripButton.Alignment = ToolStripItemAlignment.Right;
-      this.filterToolStripButton.Image = (Image) componentResourceManager.GetObject("filterToolStripButton.Image");
+     // this.filterToolStripButton.Image = (Image) componentResourceManager.GetObject("filterToolStripButton.Image");
       this.filterToolStripButton.ImageTransparentColor = Color.Magenta;
       this.filterToolStripButton.Name = "filterToolStripButton";
       this.filterToolStripButton.Size = new Size(106, 22);
@@ -818,8 +818,8 @@ namespace Camstar.WCF.Builder
       this.AutoScaleMode = AutoScaleMode.Font;
       this.ClientSize = new Size(678, 513);
       this.Controls.Add((Control) this.toolStripContainer1);
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
-      this.Name = nameof (MainForm);
+      
+      this.Name = "MainForm";
       this.StartPosition = FormStartPosition.CenterScreen;
       this.Text = "WCF Services Generator";
       this.contextMenuStrip1.ResumeLayout(false);

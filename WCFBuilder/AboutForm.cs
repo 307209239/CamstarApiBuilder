@@ -186,10 +186,9 @@ namespace Camstar.WCF.Builder
       this.Controls.Add((Control) this.textBox1);
       this.Controls.Add((Control) this.label1);
       this.FormBorderStyle = FormBorderStyle.FixedSingle;
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
       this.MaximizeBox = false;
       this.MinimizeBox = false;
-      this.Name = nameof (AboutForm);
+      this.Name = "About";
       this.StartPosition = FormStartPosition.CenterParent;
       this.Text = "About WCF Builder";
       this.Load += new EventHandler(this.AboutForm_Load);

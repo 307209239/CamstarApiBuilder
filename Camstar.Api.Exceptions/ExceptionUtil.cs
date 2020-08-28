@@ -60,7 +60,7 @@ namespace Camstar.Api.Exceptions
                 {
                 }
             }
-            if (str == null || str == string.Empty)
+            if (string.IsNullOrEmpty(str))
                 str = key;
             return str;
         }
@@ -81,5 +81,5 @@ namespace Camstar.Api.Exceptions
             return message;
         }
     }
-}
+
 }

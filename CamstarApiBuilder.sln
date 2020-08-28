@@ -21,7 +21,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFBuilder", "WCFBuilder\WC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFBuilderLauncher", "WCFBuilderLauncher\WCFBuilderLauncher.csproj", "{FD534DF8-81A2-4813-8B08-E712C4A1F80B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camstar.Api.Exceptions", "Camstar.Api.Exceptions\Camstar.Api.Exceptions.csproj", "{756DCF68-ECC0-4328-82C8-79AF9F4291E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Camstar.Api.Exceptions", "Camstar.Api.Exceptions\Camstar.Api.Exceptions.csproj", "{756DCF68-ECC0-4328-82C8-79AF9F4291E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camstar.Api.Util", "Camstar.Api.Util\Camstar.Api.Util.csproj", "{DD02998E-6E26-4E99-B284-B92E8B1AEE22}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aapi", "Aapi", "{09852294-BB99-49D2-8370-8B336801C7ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camstar.Api.Utility", "Camstar.Api.Utility\Camstar.Api.Utility.csproj", "{276A85EF-65FB-4F42-A049-7DF1F6AEFBB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camstar.Api.Builder", "Camstar.Api.Builder\Camstar.Api.Builder.csproj", "{82B572BC-99F3-4FE0-9E24-4A88D47E8258}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,9 +77,27 @@ Global
 		{756DCF68-ECC0-4328-82C8-79AF9F4291E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{756DCF68-ECC0-4328-82C8-79AF9F4291E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{756DCF68-ECC0-4328-82C8-79AF9F4291E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD02998E-6E26-4E99-B284-B92E8B1AEE22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD02998E-6E26-4E99-B284-B92E8B1AEE22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD02998E-6E26-4E99-B284-B92E8B1AEE22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD02998E-6E26-4E99-B284-B92E8B1AEE22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{276A85EF-65FB-4F42-A049-7DF1F6AEFBB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{276A85EF-65FB-4F42-A049-7DF1F6AEFBB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{276A85EF-65FB-4F42-A049-7DF1F6AEFBB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{276A85EF-65FB-4F42-A049-7DF1F6AEFBB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82B572BC-99F3-4FE0-9E24-4A88D47E8258}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82B572BC-99F3-4FE0-9E24-4A88D47E8258}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82B572BC-99F3-4FE0-9E24-4A88D47E8258}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82B572BC-99F3-4FE0-9E24-4A88D47E8258}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{756DCF68-ECC0-4328-82C8-79AF9F4291E7} = {09852294-BB99-49D2-8370-8B336801C7ED}
+		{DD02998E-6E26-4E99-B284-B92E8B1AEE22} = {09852294-BB99-49D2-8370-8B336801C7ED}
+		{276A85EF-65FB-4F42-A049-7DF1F6AEFBB0} = {09852294-BB99-49D2-8370-8B336801C7ED}
+		{82B572BC-99F3-4FE0-9E24-4A88D47E8258} = {09852294-BB99-49D2-8370-8B336801C7ED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4244BA20-6415-47A0-95EC-16C7AED57618}

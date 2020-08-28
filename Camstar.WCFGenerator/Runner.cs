@@ -420,7 +420,7 @@ namespace Camstar.WCF.Generator
         };
         process.StartInfo.UseShellExecute = false;
         process.StartInfo.CreateNoWindow = true;
-        process.StartInfo.WorkingDirectory = Path.GetDirectoryName(Path);
+        process.StartInfo.WorkingDirectory =System.IO.Path.GetDirectoryName(Path);
         process.Start();
         process.WaitForExit();
         if (process.ExitCode > 0)
@@ -438,7 +438,7 @@ namespace Camstar.WCF.Generator
       };
       process.StartInfo.UseShellExecute = false;
       process.StartInfo.CreateNoWindow = true;
-      process.StartInfo.WorkingDirectory = Path.GetDirectoryName(Path);
+      process.StartInfo.WorkingDirectory = System.IO.Path.GetDirectoryName(Path);
       process.Start();
       return process;
     }

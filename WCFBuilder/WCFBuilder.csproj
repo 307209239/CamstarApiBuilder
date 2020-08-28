@@ -71,11 +71,6 @@
     <Compile Include="AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AboutForm.resx" />
-    <EmbeddedResource Include="AdvancedSettingsForm.resx" />
-    <EmbeddedResource Include="MainForm.resx" />
-    <EmbeddedResource Include="MethodsEditForm.resx" />
-    <EmbeddedResource Include="ProgressForm.resx" />
     <EmbeddedResource Include="Properties\Resources.resx" />
   </ItemGroup>
   <ItemGroup>

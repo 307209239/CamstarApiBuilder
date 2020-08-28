@@ -42,55 +42,20 @@ namespace Camstar.Api.Exceptions
             this.mParameters = parameters;
         }
 
-        public virtual string Id
-        {
-            get
-            {
-                return ExceptionUtil.GetIdValue(this.ResourceManager, this.mKey);
-            }
-        }
+        public virtual string Id => ExceptionUtil.GetIdValue(this.ResourceManager, this.mKey);
 
-        public virtual string Key
-        {
-            get
-            {
-                return this.mKey;
-            }
-        }
+        public virtual string Key => this.mKey;
 
-        public override string Message
-        {
-            get
-            {
-                return ExceptionUtil.GetMessageValue(this.ResourceManager, this.mKey, this.mParameters);
-            }
-        }
+        public override string Message => ExceptionUtil.GetMessageValue(this.ResourceManager, this.mKey, this.mParameters);
 
-        protected virtual ResourceManager ResourceManager
-        {
-            get
-            {
-                if (this.mRM == null)
-                    this.mRM = new ResourceManager(ExceptionUtil.GetStringResourcesBaseName(this.Namespace), this.Assembly);
-                return this.mRM;
-            }
-        }
+        protected virtual ResourceManager ResourceManager =>
+            this.mRM ?? (this.mRM =
+                new ResourceManager(ExceptionUtil.GetStringResourcesBaseName(this.Namespace),
+                    this.Assembly));
 
-        protected virtual string Namespace
-        {
-            get
-            {
-                return this.mNamespace.Length > 0 ? this.mNamespace : this.GetType().Namespace;
-            }
-        }
+        protected virtual string Namespace => this.mNamespace.Length > 0 ? this.mNamespace : this.GetType().Namespace;
 
-        protected virtual Assembly Assembly
-        {
-            get
-            {
-                return this.mExecAssembly != (Assembly)null ? this.mExecAssembly : Assembly.GetExecutingAssembly();
-            }
-        }
+        protected virtual Assembly Assembly => this.mExecAssembly != (Assembly)null ? this.mExecAssembly : Assembly.GetExecutingAssembly();
 
         protected void Initialize(string callerNamespace, Assembly executingAssembly)
         {
